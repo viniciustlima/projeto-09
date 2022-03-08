@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple management control system with user registration and login.",
   "main": "src/server.js",
-  "repository": "git@github.com:viniciustlima/projeto-09.git",
+  "repository": "https://github.com/viniciustlima/projeto09.git",
   "author": "viniciustlima <vinitlima2007.14@gmail.com>",
   "license": "MIT",
   "private": true,
