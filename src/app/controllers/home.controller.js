@@ -17,8 +17,7 @@ class HomeController {
 			data = JSON.parse(data)
 
 			for (let i = 0; i < data.users.length; i++) {
-				if ((req.body.username === data.users[i].username) 
-					&& (req.body.password === data.users[i].password)) {
+				if ((req.body.username === data.users[i].username) && (req.body.password === data.users[i].password)) {
 					req.session.login = data.users[i]
 					break
 				}
