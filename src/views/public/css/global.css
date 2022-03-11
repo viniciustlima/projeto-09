@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+/* global */
+* {	
+  margin: 0; 
+  padding: 0;	
+  box-sizing: border-box; 
+  outline: none; 
+  list-style: none; 
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body { 
+  height: 100%;
+}
+
+input, textarea {
+  border-radius: 0;
+}
+
+textarea { 
+  resize: none; 
+  overflow-y: auto;
+}
+
+input, input:focus, 
+textarea:focus, select:focus, 
+button, button:focus {
+  outline: 0;
+}
+
+/* context */
+.center { 
+  width: 100%; 
+  max-width: 1440px; 
+  margin: 0 auto;	
+  padding: 0 2%;
+}
+
+/* float  */
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+
+/* widths */
+.w100 { width: 100%; }
+.w90 { width: 90%; }
+.w80 { width: 80%; }
+.w75 { width: 75%; }
+.w70 { width: 70%; }
+.w60 { width: 60%; }
+.w50 { width: 50%; }
+.w40 { width: 40%; }
+.w33 { width: 33.33% }
+.w30 { width: 30%; }
+.w25 { width: 25%; }
+.w20 { width: 20%; }
+.w10 { width: 10%; }
