@@ -7,11 +7,18 @@
   "author": "viniciustlima <vinitlima2007.14@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "server:prod": "node .",
+    "server:dev": "nodemon ."
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "express-session": "^1.17.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
   }
 }
