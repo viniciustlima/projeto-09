@@ -1,8 +1,10 @@
+const router = require('express').Router()
 
-const router = require("express").Router();
+const home = require('../controllers/home.controller')
 
-router.get("/", (req, res) => {
-	return res.json({ message: "hello" });
-});
+router.get('/', home.index)
+router.post('/', home.post)
 
-module.exports = router;
+router.get('/logout', (req, res) => { req.session.login = undefined; return res.redirect('/') })
+
+module.exports = router
