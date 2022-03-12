@@ -1,3 +1,113 @@
 @import "./global.css";
 
+body { background-color: rgb(225, 225, 225); }
 
+header {
+	position: relative;
+	left: 300px;
+	padding: 8px 15px;
+	background: #78909c;
+	width: calc(100% - 300px);
+}
+
+.logout a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
+
+.logout a span { font-size: 16x; }
+
+.menu-button {
+	cursor: pointer;
+	font-size: 20px;
+	color: #fff;
+}
+
+aside {
+	overflow-y: auto;
+	height: 100%;
+	width: 300px;
+	padding: 10px 0;
+	background: #455a64;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+aside .user {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	padding: 20px;
+}
+
+aside .user h2 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+aside .user h3 {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+aside .user .role {
+	width: 48px;
+	height: 48px;
+	font-size: 24px;
+	border: 1px solid #ffff;
+	border-radius: 50%;
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+
+aside .items { margin-top: 20px; }
+
+aside .items h2 {
+	text-align: left;
+	font-weight: 400;
+	font-size: 16px;
+	background: #2f3d42;
+	color: #fff;
+	padding: 8px;
+}
+
+aside .items a {
+	display: block;
+	padding: 7px;
+	font-weight: 300;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	border-bottom: 2px solid #2f3d42;
+	transition: .15s;
+}
+
+aside .items a:hover { background: #3c4e57; }
+
+main {
+	width: calc(100% - 300px);
+	position: relative;
+	left: 300px;
+	padding: 10px;
+}
+
+main .content {
+	background: white;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+}
+
+main .content h2 {
+	font-size: 22px;
+	font-weight: 400;
+	color: #2b2b2b;
+	margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+	.logout a span { display: none; }
+	aside { display: none; }
+	main, header { width: 100%; left: 0; }
+}
