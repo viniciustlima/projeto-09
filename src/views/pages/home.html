@@ -9,6 +9,44 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<a href="/logout">Encerrar sessão.</a>
+	<aside class="left">
+		<div class="user">
+			<div class="role left"><i class="<%= utils.getRoleIcon(login.role) %>"></i></div>
+			<div class="info left">
+				<h2><%= login.name %></h2>
+				<h3><%= utils.getRole(login.role) %></h3>
+			</div>
+		</div>
+		<div class="items">
+			<h2>Sessão 1</h2>
+			<a href="/item1">Item 01</a>
+			<a href="/item2">Item 02</a>
+			<a href="/item3">Item 03</a>
+			<a href="/item4">Item 04</a>
+			<a href="/item5">Item 05</a>
+			<h2>Sessão 2</h2>
+			<a href="/item1">Item 01</a>
+			<a href="/item2">Item 02</a>
+			<a href="/item3">Item 03</a>
+			<a href="/item4">Item 04</a>
+			<a href="/item5">Item 05</a>
+		</div>
+	</aside>
+	
+	<header class="left">
+		<div class="menu-button left"><i class="fas fa-bars"></i></div>
+		<div class="logout right"><a href="/logout"><i class="fas fa-sign-out"></i> <span>Encerrar sessão</span></a></div>
+		<div class="clear"></div>
+	</header>
+
+	<main class="left">
+		<div class="content w100 left">
+		<h2>Vendas hoje</h2>
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://viniciustlima.github.io/projeto05/scripts/fontawesome.js"></script>
+	<script src="./scripts/menu.js"></script>
 </body>
 </html>
