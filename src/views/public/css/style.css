@@ -1,6 +1,8 @@
-@import "./global.css";
+@import './global.css';
 
-body { background-color: rgb(225, 225, 225); }
+body {
+	background-color: rgb(225, 225, 225);
+}
 
 header {
 	position: relative;
@@ -16,7 +18,9 @@ header {
 	font-size: 18px;
 }
 
-.logout a span { font-size: 16x; }
+.logout a span {
+	font-size: 16x;
+}
 
 .menu-button {
 	cursor: pointer;
@@ -62,7 +66,9 @@ aside .user .role {
 	margin-right: 10px;
 }
 
-aside .items { margin-top: 20px; }
+aside .items {
+	margin-top: 20px;
+}
 
 aside .items h2 {
 	text-align: left;
@@ -81,10 +87,12 @@ aside .items a {
 	text-decoration: none;
 	color: #fff;
 	border-bottom: 2px solid #2f3d42;
-	transition: .15s;
+	transition: 0.15s;
 }
 
-aside .items a:hover { background: #3c4e57; }
+aside .items a:hover {
+	background: #3c4e57;
+}
 
 main {
 	width: calc(100% - 300px);
@@ -113,7 +121,15 @@ main .content p {
 }
 
 @media screen and (max-width: 768px) {
-	.logout a span { display: none; }
-	aside { display: none; }
-	main, header { width: 100%; left: 0; }
+	.logout a span {
+		display: none;
+	}
+	aside {
+		display: none;
+	}
+	main,
+	header {
+		width: 100%;
+		left: 0;
+	}
 }

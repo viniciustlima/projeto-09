@@ -1,83 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-	<title>Página Principal - Painel de Controle</title>
+	<head>
+		<title>Página Principal - Painel de Controle</title>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+		/>
 
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<aside class="left">
-		<div class="user">
-			<div class="role left"><i class="<%= utils.getRoleIcon(login.role) %>"></i></div>
-			<div class="info left">
-				<h2><%= login.name %></h2>
-				<h3><%= utils.getRole(login.role) %></h3>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<aside class="left">
+			<div class="user">
+				<div class="role left">
+					<i class="<%= utils.getRoleIcon(login.role) %>"></i>
+				</div>
+				<div class="info left">
+					<h2><%= login.name %></h2>
+					<h3><%= utils.getRole(login.role) %></h3>
+				</div>
 			</div>
-		</div>
-		<div class="items">
-			<h2>Lorem Ipsum</h2>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<h2>Lorem Ipsum</h2>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<h2>Lorem Ipsum</h2>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-			<a href="/#">Lorem ipsum dolor sit amet</a>
-		</div>
-	</aside>
-	
-	<header class="left">
-		<div class="menu-button left"><i class="fas fa-bars"></i></div>
-		<div class="logout right"><a href="/logout"><i class="fas fa-sign-out"></i> <span>Encerrar sessão</span></a></div>
-		<div class="clear"></div>
-	</header>
+			<div class="items">
+				<h2>Lorem Ipsum</h2>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<h2>Lorem Ipsum</h2>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<h2>Lorem Ipsum</h2>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<a href="/#">Lorem ipsum dolor sit amet</a>
+			</div>
+		</aside>
 
-	<main class="left">
-		<div class="content w100 left">
-			<h2>Lorem Ipsum</h2>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex enim, optio officia incidunt itaque assumenda impedit tempore reiciendis magnam quo numquam obcaecati similique, repudiandae doloribus. Ab dolor illum voluptatem mollitia?</p>
-		</div>
-		<div class="content w50 left">
-			<h2>Lorem Ipsum</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque error, architecto molestiae itaque omnis optio quidem? Voluptatibus dolorem fugiat, aut quo pariatur incidunt enim id sequi omnis, ab veniam vitae.</p>
-		</div>
-		<div class="content w50 right">
-			<h2>Lorem Ipsum</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat nesciunt asperiores eaque est voluptas commodi laborum recusandae animi quas at, rerum ipsa tempore aut dolorum dolorem, reiciendis facere vitae.</p>
-		</div>
-		<div class="content w30 left">
-			<h2>Lorem Ipsum</h2>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-		</div>
-		<div class="content w70 right">
-			<h2>Lorem Ipsum</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum cumque ea, necessitatibus rem neque distinctio possimus corrupti.</p>
-		</div>
-		<div class="content w70 left">
-			<h2>Lorem Ipsum</h2>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Nostrum, animi architecto provident asperiores culpa, id quis sunt aliquid accusamus facere tempore ex magnam quaerat hic iusto ad beatae fugit, libero.</p>
-		</div>
-		<div class="content w30 right">
-			<h2>Lorem Ipsum</h2>
-			<p>Corrupti laudantium deleniti voluptates, corporis architecto qui sit saepe placeat et, fugit.</p>
-		</div>
-		<div class="content w100 left">
-			<h2>Lorem Ipsum</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste exercitationem perferendis culpa explicabo quibusdam odit ea, dignissimos beatae praesentium deserunt quia voluptatum? Minima qui suscipit, laboriosam quasi, autem rerum libero.</p>
-		</div>
-	</main>
+		<header class="left">
+			<div class="menu-button left"><i class="fas fa-bars"></i></div>
+			<div class="logout right">
+				<a href="/logout"
+					><i class="fas fa-sign-out"></i> <span>Encerrar sessão</span></a
+				>
+			</div>
+			<div class="clear"></div>
+		</header>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-	<script src="https://viniciustlima.github.io/projeto05/scripts/fontawesome.js"></script>
-	<script src="./scripts/menu.js"></script>
-</body>
+		<main class="left">
+			<div class="content w100 left">
+				<h2>Lorem Ipsum</h2>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex enim,
+					optio officia incidunt itaque assumenda impedit tempore reiciendis
+					magnam quo numquam obcaecati similique, repudiandae doloribus. Ab
+					dolor illum voluptatem mollitia?
+				</p>
+			</div>
+			<div class="content w50 left">
+				<h2>Lorem Ipsum</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+					error, architecto molestiae itaque omnis optio quidem? Voluptatibus
+					dolorem fugiat, aut quo pariatur incidunt enim id sequi omnis, ab
+					veniam vitae.
+				</p>
+			</div>
+			<div class="content w50 right">
+				<h2>Lorem Ipsum</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+					repellat nesciunt asperiores eaque est voluptas commodi laborum
+					recusandae animi quas at, rerum ipsa tempore aut dolorum dolorem,
+					reiciendis facere vitae.
+				</p>
+			</div>
+			<div class="content w30 left">
+				<h2>Lorem Ipsum</h2>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+			</div>
+			<div class="content w70 right">
+				<h2>Lorem Ipsum</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+					laborum cumque ea, necessitatibus rem neque distinctio possimus
+					corrupti.
+				</p>
+			</div>
+			<div class="content w70 left">
+				<h2>Lorem Ipsum</h2>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Nostrum,
+					animi architecto provident asperiores culpa, id quis sunt aliquid
+					accusamus facere tempore ex magnam quaerat hic iusto ad beatae fugit,
+					libero.
+				</p>
+			</div>
+			<div class="content w30 right">
+				<h2>Lorem Ipsum</h2>
+				<p>
+					Corrupti laudantium deleniti voluptates, corporis architecto qui sit
+					saepe placeat et, fugit.
+				</p>
+			</div>
+			<div class="content w100 left">
+				<h2>Lorem Ipsum</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+					exercitationem perferendis culpa explicabo quibusdam odit ea,
+					dignissimos beatae praesentium deserunt quia voluptatum? Minima qui
+					suscipit, laboriosam quasi, autem rerum libero.
+				</p>
+			</div>
+		</main>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://viniciustlima.github.io/projeto05/scripts/fontawesome.js"></script>
+		<script src="./scripts/menu.js"></script>
+	</body>
 </html>

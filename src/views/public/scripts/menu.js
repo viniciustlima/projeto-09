@@ -1,5 +1,5 @@
 $(() => {
-	var open = true;
+	var open = true
 	var winSize = $(window)[0].innerWidth
 
 	if (winSize <= 768) {
