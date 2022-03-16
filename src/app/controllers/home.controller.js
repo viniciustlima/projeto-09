@@ -6,7 +6,11 @@ const utils = require('../utils/utils.js')
 class HomeController {
 	index = (req, res) => {
 		if (req.session.login != undefined)
-			return res.render('home', { login: req.session.login, utils, page: req.originalUrl })
+			return res.render('home', {
+				login: req.session.login,
+				utils,
+				page: req.originalUrl,
+			})
 		else return res.render('login')
 	}
 
@@ -31,6 +35,19 @@ class HomeController {
 		} catch (err) {
 			return res.redirect('/')
 		}
+	}
+
+	logout = (req, res) => {
+		req.session.login = undefined
+		return res.redirect('/')
+	}
+
+	permissionError = (req, res) => {
+		return res.render('home', {
+			login: req.session.login,
+			utils: require('../utils/utils'),
+			page: req.originalUrl,
+		})
 	}
 }
 
