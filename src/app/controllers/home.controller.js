@@ -6,7 +6,7 @@ const utils = require('../utils/utils.js')
 class HomeController {
 	index = (req, res) => {
 		if (req.session.login != undefined)
-			return res.render('home', { login: req.session.login, utils })
+			return res.render('home', { login: req.session.login, utils, page: req.originalUrl })
 		else return res.render('login')
 	}
 
