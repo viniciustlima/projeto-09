@@ -1,25 +1,21 @@
 const router = require('express').Router()
 
 const home = require('../controllers/home.controller')
+const user = require('../controllers/user.controller')
 
-const loginmid = require('../middlewares/login.middleware')
+const loginM = require('../middlewares/login.middleware')
+const permissionM = require('../middlewares/permission.middleware')
 
 router.get('/', home.index)
 router.post('/', home.post)
+router.get('/logout', home.logout)
 
-router.get('/logout', (req, res) => {
-	req.session.login = undefined
-	return res.redirect('/')
-})
+router.get('/edit-user', loginM, user.editUserI)
+router.post('/edit-user', loginM, user.editUserP)
 
-router.get('/add-user', loginmid, (req, res) => {
-	return res.render('home', {
-		login: req.session.login,
-		utils: require('../utils/utils'),
-		page: req.originalUrl,
-	})
-})
+router.get('/add-user', loginM, permissionM, user.addUserI)
+router.post('/add-user', loginM, permissionM, user.addUserP)
 
-router.get('*', loginmid, (req, res) => res.redirect('/'))
+router.get('*', loginM, (_req, res) => res.redirect('/'))
 
 module.exports = router
