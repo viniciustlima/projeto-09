@@ -1,1 +1,11 @@
-{"users":[{"id":1,"name":"Vinicius Trindade","role":0,"username":"admin","password":"admin"}]}
+{
+	"users": [
+		{
+			"id": 1,
+			"name": "Vinicius Trindade",
+			"role": 2,
+			"username": "admin",
+			"password": "admin"
+		}
+	]
+}
