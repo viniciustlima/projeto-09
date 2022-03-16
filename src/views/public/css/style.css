@@ -136,6 +136,122 @@ main .content p {
 	padding: 4px;
 }
 
+main .content form {
+	margin: 30px 0;
+}
+
+main .content form label {
+	font-size: 19px;
+	font-weight: 300;
+	color: #444;
+	display: block;
+}
+
+main .content form .form-group {
+	margin: 15px 0;
+}
+
+main .content form .form-group span {
+	position: absolute;
+	right: 45px;
+	margin-top: 22px;
+	cursor: pointer;
+}
+
+main .content form .form-group span .fa-eye {
+	font-size: 24px;
+	color: #7a797e;
+}
+
+main .content form input[type='text'],
+main .content form input[type='password'] {
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #444;
+	width: 100%;
+	height: 50px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+}
+
+main .content form input[type='file'] {
+	margin-top: 8px;
+	display: none;
+}
+
+main .content form .form-group textarea {
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #444;
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	resize: vertical;
+}
+
+main .content form label#image-label {
+	width: 200px;
+	height: 55px;
+	background-color: #333;
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.25s;
+	border: 1px solid #333;
+	font-size: 17px;
+}
+
+main .content form label#image-label:hover {
+	color: #333;
+	background-color: #fff;
+}
+
+main .content form input[type='submit'] {
+	width: 200px;
+	height: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #66bb6a;
+	color: #f5f5f5;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.25s;
+	border: 1px solid #66bb6a;
+}
+
+main .content form input[type='submit']:hover {
+	color: #66bb6a;
+	background-color: #fff;
+}
+
+main .content form select {
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #444;
+	width: 100%;
+	height: 50px;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+}
+
+main .content form select option {
+	font-size: 16px;
+	font-weight: normal;
+	color: #444;
+	width: 100%;
+	height: 50px;
+}
+
 @media screen and (max-width: 768px) {
 	.logout a span {
 		display: none;
