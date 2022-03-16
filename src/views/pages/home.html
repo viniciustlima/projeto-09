@@ -20,6 +20,7 @@
 				<div class="info left">
 					<h2><%= login.name %></h2>
 					<h3><%= utils.getRole(login.role) %></h3>
+					<a href="/edit-user">Editar usuário</a>
 				</div>
 			</div>
 			<div class="items">
@@ -32,52 +33,37 @@
 				<a href="/#">Lorem ipsum dolor sit amet</a>
 				<a href="/#">Lorem ipsum dolor sit amet</a>
 				<a href="/#">Lorem ipsum dolor sit amet</a>
-				<h2>Lorem Ipsum</h2>
-				<a href="/#">Lorem ipsum dolor sit amet</a>
-				<a href="/#">Lorem ipsum dolor sit amet</a>
-				<a href="/#">Lorem ipsum dolor sit amet</a>
-				<a href="/#">Lorem ipsum dolor sit amet</a>
+				<div style="display:<%= (login.role < 2) ? 'none' : 'block' %>">
+					<h2>Administração</h2>
+					<a href="/add-user">Adicionar usuário</a>
+					<a href="/#">Lorem ipsum dolor sit amet</a>
+					<a href="/#">Lorem ipsum dolor sit amet</a>
+					<a href="/#">Lorem ipsum dolor sit amet</a>
+				</div>
 			</div>
 		</aside>
 
 		<header class="left">
 			<div class="menu-button left"><i class="fas fa-bars"></i></div>
 			<div class="logout right">
-				<a href="/logout"
-					><i class="fas fa-sign-out"></i> <span>Encerrar sessão</span></a
-				>
+				<a href="/logout">
+					<i class="fas fa-sign-out"></i> <span>Encerrar sessão</span>
+				</a>
+			</div>
+			<div
+				style="display:<%= (page == '/') ? 'none' : 'block' %>"
+				class="home right"
+			>
+				<a href="/">
+					<i class="fas fa-home"></i> <span>Página inicial</span>
+				</a>
 			</div>
 			<div class="clear"></div>
 		</header>
 
 		<main class="left">
-			<div class="content w100 left">
-				<h2>Lorem Ipsum</h2>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex enim,
-					optio officia incidunt itaque assumenda impedit tempore reiciendis
-					magnam quo numquam obcaecati similique, repudiandae doloribus. Ab
-					dolor illum voluptatem mollitia?
-				</p>
-			</div>
-			<div class="content w50 left">
-				<h2>Lorem Ipsum</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-					error, architecto molestiae itaque omnis optio quidem? Voluptatibus
-					dolorem fugiat, aut quo pariatur incidunt enim id sequi omnis, ab
-					veniam vitae.
-				</p>
-			</div>
-			<div class="content w50 right">
-				<h2>Lorem Ipsum</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-					repellat nesciunt asperiores eaque est voluptas commodi laborum
-					recusandae animi quas at, rerum ipsa tempore aut dolorum dolorem,
-					reiciendis facere vitae.
-				</p>
-			</div>
+			<% if (page == '/') { %> <%- include('./subpages/main.html') %> <% } else
+			{ %> <%- include('./subpages' + page + '.html') %> <% } %>
 		</main>
 
 		<script
