@@ -1,7 +1,7 @@
 const router = require('express').Router()
 
-const home = require('../controllers/home.controller')
-const user = require('../controllers/user.controller')
+const home = require('../controllers/home.controller.js')
+const user = require('../controllers/user.controller.js')
 
 const loginM = require('../middlewares/login.middleware')
 const permissionM = require('../middlewares/permission.middleware')
