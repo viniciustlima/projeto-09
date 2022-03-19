@@ -4,17 +4,19 @@ const fs = require('fs')
 const utils = require('../utils/utils.js')
 
 class HomeController {
-	index = (req, res) => {
-		if (req.session.login != undefined)
+	index(req, res) {
+		if (req.session.login != undefined) {
 			return res.render('home', {
 				login: req.session.login,
 				utils,
 				page: req.originalUrl,
 			})
-		else return res.render('login')
+		}
+
+		return res.render('login')
 	}
 
-	post = (req, res) => {
+	post(req, res) {
 		try {
 			var data = fs.readFileSync(
 				path.join(__dirname, '../config/users.json'),
@@ -37,12 +39,12 @@ class HomeController {
 		}
 	}
 
-	logout = (req, res) => {
+	logout(req, res) {
 		req.session.login = undefined
 		return res.redirect('/')
 	}
 
-	permissionError = (req, res) => {
+	permissionError(req, res) {
 		return res.render('home', {
 			login: req.session.login,
 			utils: require('../utils/utils'),

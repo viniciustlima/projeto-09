@@ -1,7 +1,9 @@
 class Utils {
-	percentage = (p, t) => (p * 100) / t
+	percentage(p, t) {
+		return (p * 100) / t
+	}
 
-	getRole = (r) => {
+	getRole(r) {
 		const roles = [
 			{ roleId: 2, roleName: 'Administrador' },
 			{ roleId: 1, roleName: 'Moderador' },
@@ -12,7 +14,7 @@ class Utils {
 			if (r === roles[i].roleId) return roles[i].roleName
 	}
 
-	getRoleIcon = (r) => {
+	getRoleIcon(r) {
 		const roles = [
 			{ roleId: 2, roleIcon: 'fas fa-star' },
 			{ roleId: 1, roleIcon: 'fas fa-crown' },
